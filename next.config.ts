@@ -9,7 +9,10 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: true
-  }
+  },
+  output: 'standalone',
+  trailingSlash: true,
+  serverExternalPackages: ['xlsx']
 };
 
 export default nextConfig;

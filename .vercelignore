@@ -6,11 +6,12 @@
 # Excel files
 *.xlsx
 
-# JSON data files
+# JSON data files (keep only essential ones)
 *.json
 !package.json
 !package-lock.json
 !tsconfig.json
+!next-env.d.ts
 
 # Documentation
 *.md
@@ -27,3 +28,20 @@
 # Temporary files
 *.tmp
 *.temp
+
+# Development files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

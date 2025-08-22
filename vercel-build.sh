@@ -4,7 +4,7 @@
 echo "Starting Vercel build..."
 
 # Install dependencies
-npm install
+npm ci --only=production
 
 # Build the application
 npm run build
