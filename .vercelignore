@@ -45,3 +45,42 @@ pids
 *.pid
 *.seed
 *.pid.lock
+
+# Build artifacts
+.next/cache
+.next/server/chunks
+.next/static/chunks
+
+# Large data files
+excel_data.json
+excel_image_data.json
+excel_resim_data.json
+son_excel_data.json
+products.json
+image_mapping.json
+product_image_mapping.json
+
+# Script files
+admin-load-script.js
+assign-first-10-images.js
+assign-images.js
+copy-images.js
+correct-image-mapping.js
+final-image-fix.js
+final-image-update.js
+fix-excel-mapping.js
+fix-image-mapping.js
+fix-images.js
+fix-resim-yolu.js
+fix-string-format.js
+read-excel-images.js
+read-resim-yolu.js
+read-son-excel.js
+update-admin-with-all-products.js
+update-images.js
+update-product-images.js
+update-resim-yolu.js
+update-son-excel.js
+update-with-existing-images.js
+update-without-images.js
+use-resim-yolu.js

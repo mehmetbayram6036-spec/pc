@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# Vercel build script
-echo "Starting Vercel build..."
+# Vercel build script - optimized for limited resources
+echo "Starting optimized Vercel build..."
 
-# Install dependencies
-npm ci --only=production
+# Set Node.js memory limit
+export NODE_OPTIONS="--max-old-space-size=4096"
 
-# Build the application
+# Install only production dependencies
+npm ci --only=production --no-audit --no-fund
+
+# Build the application with reduced memory usage
 npm run build
 
 echo "Build completed successfully!"
